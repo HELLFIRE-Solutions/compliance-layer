@@ -26,8 +26,8 @@ as a standard modules are checked against, rather than an assumption.
   posture is consistent with, not weaker than, the project it dogfoods
   alongside.
 - **`internal-db`:** private repo, explicitly scoped to EU residency in its own
-  README ("Містить дані клієнтів — репозиторій приватний, EU data residency
-  обов'язкова (DSGVO)") and in `STATE.md` row 04. Consistent with this
+  README ("Contains client data — repository is private, EU data residency
+  is mandatory (DSGVO)") and in `STATE.md` row 04. Consistent with this
   standard, already decided independently — no conflict to resolve.
 
 ## Open gaps — flag before they become incidents, not after

@@ -1,15 +1,15 @@
 # HELLFIRE AI Solutions — Compliance / Trust Layer
 
-Модуль 7. Документування власного compliance-підходу (legitimate interest, data residency, AI Act risk-classification) як внутрішнього стандарту, на основі TWIRA-логіки верифікації TETA+PI. DSGVO/AI Act — вхідний квиток на німецький ринок.
+Module 7. Documents our own compliance approach (legitimate interest, data residency, AI Act risk classification) as an internal standard, based on TETA+PI's TWIRA verification logic. DSGVO/AI Act — the entry ticket to the German market.
 
-**Dogfooding → шаблон:** compliance-аудит + впровадження чеклист/фреймворк, продаваний як окремий модуль або обов'язковий додаток до інших модулів.
+**Dogfooding → template:** a compliance audit + rollout checklist/framework, sellable as a standalone module or a required add-on to other modules.
 
-**Документація (Етап 1, 2026-07-21):**
-- [`docs/standard.md`](docs/standard.md) — HELLFIRE Internal Compliance Standard v1, огляд і координація з gtm-agent/TWIRA
-- [`docs/legitimate-interest.md`](docs/legitimate-interest.md) — DSGVO Art. 6(1)(f), на основі `gtm-agent`'s `LegitimateInterestRecord`
-- [`docs/data-residency.md`](docs/data-residency.md) — EU data residency, включно з відкритими прогалинами (HubSpot, Anthropic API)
-- [`docs/ai-act-classification.md`](docs/ai-act-classification.md) — risk-tier кожного модуля HELLFIRE
+**Documentation (Etap 1, 2026-07-21):**
+- [`docs/standard.md`](docs/standard.md) — HELLFIRE Internal Compliance Standard v1, overview and coordination with gtm-agent/TWIRA
+- [`docs/legitimate-interest.md`](docs/legitimate-interest.md) — DSGVO Art. 6(1)(f), based on `gtm-agent`'s `LegitimateInterestRecord`
+- [`docs/data-residency.md`](docs/data-residency.md) — EU data residency, including open gaps (HubSpot, Anthropic API)
+- [`docs/ai-act-classification.md`](docs/ai-act-classification.md) — risk tier for every HELLFIRE module
 
-**Статус:** Етап 1 завершено (документація власного compliance-підходу). Етап 2 (продаваний аудит-фреймворк) не розпочато.
+**Status:** Etap 1 done (documentation of our own compliance approach). Etap 2 (sellable audit framework) not started.
 
-**Ліцензія:** MIT.
+**License:** MIT.
