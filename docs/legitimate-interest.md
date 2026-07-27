@@ -41,12 +41,12 @@ Synced to HubSpot as contact properties (`legitimate_interest_source`,
 `legitimate_interest_notes`) so the record lives on the contact itself, visible
 to anyone with CRM access — not buried in a side system.
 
-## What compliance-layer adds in Etap 1 (not a schema change)
+## What compliance-layer adds in Stage 1 (not a schema change)
 
 gtm-agent's own architecture doc (`gtm-agent/docs/architecture.md` §3) already
-flags this as "intentionally minimal and Etap-1-scoped" and expects
-compliance-layer to add an audit/export view rather than change capture. Etap 1
-here defines what that view needs to answer, for Etap 2 to build against:
+flags this as "intentionally minimal and Stage-1-scoped" and expects
+compliance-layer to add an audit/export view rather than change capture. Stage 1
+here defines what that view needs to answer, for Stage 2 to build against:
 
 - **Coverage check:** does every contact with `status != draft` have an active
   (non-opted-out) `LegitimateInterestRecord`? (Should always be true given the
@@ -61,7 +61,7 @@ here defines what that view needs to answer, for Etap 2 to build against:
   non-empty string isn't the same as a real balancing test.
 
 This is a read/report layer over gtm-agent's existing data (via HubSpot
-properties or the local store), not a new write path. Building it is Etap 2
+properties or the local store), not a new write path. Building it is Stage 2
 work (compliance-audit product), tracked here as the spec, not implemented yet.
 
 ## Non-goal (inherited from gtm-agent, applies HELLFIRE-wide)

@@ -1,13 +1,13 @@
 # HELLFIRE Internal Compliance Standard v1
 
-Status: Etap 1 — internal standard, documented 2026-07-21. Not yet a client-facing
-audit product (that's Etap 2, see root [README.md](../README.md)).
+Status: Stage 1 — internal standard, documented 2026-07-21. Not yet a client-facing
+audit product (that's Stage 2, see root [README.md](../README.md)).
 
 ## Scope and purpose
 
 DSGVO/AI Act compliance is HELLFIRE's entry ticket to the German market (see
 `project-overview` memory / `STATE.md`) and a differentiator against competitors
-who bolt compliance on late. Etap 1's job is narrow: **write down how HELLFIRE
+who bolt compliance on late. Stage 1's job is narrow: **write down how HELLFIRE
 already handles compliance internally**, so every module built from here on
 points at one standard instead of each session inventing its own rules.
 
@@ -37,7 +37,7 @@ it documents legitimate interest, rather than inventing a second standard.
 Read `gtm-agent/docs/architecture.md` §3 and `gtm-agent/src/gtm_agent/models.py`
 before writing anything here. Result: gtm-agent's `LegitimateInterestRecord` is
 adopted unchanged as the HELLFIRE-wide schema (see
-[legitimate-interest.md](legitimate-interest.md)) — compliance-layer's Etap 1
+[legitimate-interest.md](legitimate-interest.md)) — compliance-layer's Stage 1
 contribution is naming it as the standard other modules must reuse, and adding
 the parts gtm-agent explicitly deferred (audit/export view, periodic
 re-validation tracking), not changing the capture schema itself.
@@ -46,7 +46,7 @@ re-validation tracking), not changing the capture schema itself.
 
 TWIRA (`TETA+PI/docs/overview.md`, `docs/glossary.md`) is TetaPi GmbH's
 query-time ranking algorithm — `α·T + β·I + γ·P`, Trust × Intent × Provenance —
-and is not itself a compliance tool. What Etap 1 borrows from it is the
+and is not itself a compliance tool. What Stage 1 borrows from it is the
 **methodology**, not the algorithm:
 
 - Trust/verification is a tiered classification (`none | registry | partial |
@@ -66,12 +66,12 @@ risk classification instead of trust ranking. gtm-agent's
 converge on it, which is a signal it belongs in a shared pattern rather than
 being redecided per module.
 
-## What Etap 1 deliberately does not do
+## What Stage 1 deliberately does not do
 
-- No audit checklist/questionnaire product yet — that's Etap 2.
+- No audit checklist/questionnaire product yet — that's Stage 2.
 - No changes to gtm-agent's code or schema.
 - No legal sign-off — these documents are HELLFIRE's internal working
   interpretation, written by a non-lawyer session, not legal advice. Flagged
   open items in [data-residency.md](data-residency.md) and
   [ai-act-classification.md](ai-act-classification.md) should go to actual
-  counsel before Etap 2 turns this into a client-facing product.
+  counsel before Stage 2 turns this into a client-facing product.

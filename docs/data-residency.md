@@ -1,7 +1,7 @@
 # Data Residency Standard
 
 Status: internal standard, 2026-07-21. Not legal advice — see
-[standard.md](standard.md) "What Etap 1 deliberately does not do."
+[standard.md](standard.md) "What Stage 1 deliberately does not do."
 
 ## The rule
 
@@ -32,7 +32,7 @@ as a standard modules are checked against, rather than an assumption.
 
 ## Open gaps — flag before they become incidents, not after
 
-These are the concrete items compliance-layer's Etap 1 audit surfaced by
+These are the concrete items compliance-layer's Stage 1 audit surfaced by
 checking what's *actually* configured, not just what's planned:
 
 1. **HubSpot (gtm-agent's CRM, `STATE.md` row 05):** not yet created (blocked
@@ -69,5 +69,5 @@ session should record in its own `docs/architecture.md` — same pattern
 gtm-agent used for CRM choice — a one-line confirmation of that service's EU
 data residency posture, alongside the existing cost/functionality rationale.
 Don't defer this check to compliance-layer as a separate later audit; catching
-it at integration-choice time is cheaper than catching it in an Etap 2 audit
+it at integration-choice time is cheaper than catching it in an Stage 2 audit
 after real data is already in a non-EU system.

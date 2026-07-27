@@ -3,7 +3,7 @@
 Status: internal working classification, 2026-07-21. **Not legal advice** —
 this is a non-lawyer's working interpretation of Regulation (EU) 2024/1689,
 meant to catch obviously-wrong assumptions early and flag genuinely close
-calls for real review before Etap 2. Verify current obligation dates and
+calls for real review before Stage 2. Verify current obligation dates and
 Annex III scope against the official text before this leaves internal use.
 
 ## Method (borrowed from TWIRA, applied to a different question)
@@ -25,8 +25,8 @@ made):
 - **Re-validated, not permanent.** A module's risk tier can change if its
   scope changes (see "Re-classification triggers" below) — same principle as
   gtm-agent's `LegitimateInterestRecord.review_date` and TWIRA's decay/re-check
-  behavior. This table should be revisited whenever a module's Etap 2 (or
-  later) scope changes materially, not just once at Etap 1.
+  behavior. This table should be revisited whenever a module's Stage 2 (or
+  later) scope changes materially, not just once at Stage 1.
 
 ## The four tiers (EU AI Act)
 
@@ -70,7 +70,7 @@ one-way marketing email sent by a named human (Bob) under his own identity,
 after reviewing and approving the content, sits in ambiguous territory between
 "AI-generated content" and "a human-authored email that happened to use an AI
 drafting tool." **Do not resolve this by picking whichever answer is more
-convenient** — get an actual legal read before Etap 2 turns this
+convenient** — get an actual legal read before Stage 2 turns this
 classification table into anything client-facing, and before gtm-agent scales
 past manually-curated small lead lists.
 
@@ -95,5 +95,5 @@ holds) if any of the following happens:
   client uses the office-agent template to draft hiring-rejection
   correspondence — now potentially Annex III territory even though HELLFIRE's
   own internal use of office-agent never was). **This is the most important
-  trigger for Etap 2**: risk classification has to be re-run per client
+  trigger for Stage 2**: risk classification has to be re-run per client
   deployment, not inherited from HELLFIRE's own internal classification.
