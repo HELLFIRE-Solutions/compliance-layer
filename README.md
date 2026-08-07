@@ -10,6 +10,10 @@ Module 7. Documents our own compliance approach (legitimate interest, data resid
 - [`docs/data-residency.md`](docs/data-residency.md) — EU data residency, including open gaps (HubSpot, Anthropic API)
 - [`docs/ai-act-classification.md`](docs/ai-act-classification.md) — risk tier for every HELLFIRE module
 
-**Status:** Stage 1 done (documentation of our own compliance approach). Stage 2 (sellable audit framework) not started.
+**Added 2026-08-07 (real-client-data blocker close-out pass):**
+- [`docs/avv-template.md`](docs/avv-template.md) — **DRAFT, needs qualified counsel review** — Art. 28 DSGVO AVV/DPA template for engaging HELLFIRE as a processor of client data. Previously there was no such template at all (only "verify our own vendors' DPAs" in `data-residency.md`); this is the missing client-facing side.
+- [`docs/gdpr-baseline-checklist.md`](docs/gdpr-baseline-checklist.md) — consolidated practical checklist over the four documents above, with a live status per item and a summary of what's actually blocking real client engagements right now.
+
+**Status:** Stage 1 done (documentation of our own compliance approach), plus the AVV-template gap closed as a draft (counsel review still required). Stage 2 (sellable audit framework) not started.
 
 **License:** MIT.
