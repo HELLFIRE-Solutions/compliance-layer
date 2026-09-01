@@ -7,8 +7,22 @@
 > an engagement, and do not process any real client personal data under it
 > until a qualified data-protection lawyer (ideally German-licensed, given
 > HELLFIRE's Berlin entity and `fra1` hosting) has reviewed and signed off.
-> See [Task 3 / escalation](#escalation-to-bob-blocking) at the bottom —
+> See the [escalation section](#escalation-to-bob-blocking) at the bottom —
 > this is the single most important line in the document.
+>
+> **This is the internal working draft — it references internal file paths
+> and error names and is not suitable to send to a client as-is.** Use
+> [`avv-template-external.md`](avv-template-external.md) for anything
+> client-facing; keep this file as the source document maintainers edit.
+
+**Changelog:**
+- 2026-08-29: § 4 (categories of data subjects) expanded to cover minors
+  (Art. 8 DSGVO / DPIA) and employees under monitoring (§ 26 BDSG), per
+  outside counsel's review flagging both as missing for the actual
+  prospective clients in the pipeline (a children's coding school, and
+  SHOSHO). Sanitized external version split out as
+  `avv-template-external.md`. Full detail: `STATE.md` "Session 11
+  (continued) — counsel review of AVV, RDG finding."
 
 Companion to [standard.md](standard.md), [legitimate-interest.md](legitimate-interest.md),
 [data-residency.md](data-residency.md), and [ai-act-classification.md](ai-act-classification.md).
@@ -132,6 +146,29 @@ specific engagement:
 - Third parties incidentally referenced in processed content (e.g. a lead
   mentioning a colleague by name in an email) — minimize, do not
   deliberately capture
+- **Minors** — check this box only if the Controller's own data subjects
+  include children (e.g. a children's coding-school client whose "leads"
+  or "customers" are minors, or whose parent/guardian is the actual
+  contact but the underlying service concerns a minor). Triggers **Art. 8
+  DSGVO** (conditions for a child's consent in relation to information
+  society services) and, in most such engagements, a **mandatory Data
+  Protection Impact Assessment under Art. 35 DSGVO** — do not treat DPIA as
+  optional here; flag to counsel before this box is checked for any real
+  engagement, and do not proceed with drafting/outreach involving minors'
+  data until that DPIA exists.
+  - [ ] **DPIA required** — checked/completed: `[yes/no, date, reference]`
+- **Employees under monitoring** — check this box if the Controller's
+  engagement involves collecting data about its own employees for
+  monitoring purposes (e.g. work-time tracking, and/or computer-vision-based
+  quality-control monitoring). Triggers **§ 26 BDSG** (data processing in
+  the employment context) and, depending on the Controller's own
+  jurisdiction and works-council structure, may require **Betriebsrat
+  (works council) involvement/co-determination** before the monitoring
+  system is deployed — that is the Controller's own obligation as employer,
+  but the Processor should confirm it has been addressed before processing
+  begins, since processing employee-monitoring data without a valid legal
+  basis on the Controller's side would leave the Processor handling data
+  the Controller was never entitled to collect.
 
 ---
 
@@ -291,9 +328,13 @@ they firm up, don't leave this as a generic boilerplate list:
    without a recorded legitimate-interest basis (`legitimate-interest.md`,
    `MissingLegitimateInterestError`) — a technical, not just procedural,
    control.
-8. **Incident response:** `[document breach-detection and internal
-   escalation process — not yet written anywhere in compliance-layer;
-   flag as a gap]`.
+8. **Incident response:** see [incident-response.md](incident-response.md)
+   for the full detection/escalation/notification process. Summary: breach
+   notification to the Controller targets 48 hours from confirmation
+   (§ 5.6); current detection is partly automated (firewall/fail2ban,
+   5-minute health checks) and partly manual (no external alerting channel
+   yet — flagged as an open gap in that document, not solved by writing
+   the process down).
 
 ---
 
